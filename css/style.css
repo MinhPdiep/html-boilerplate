@@ -12,6 +12,7 @@ body{
    height: 100%;
    
 }
+
 p{
     display: block;
     margin-block-start: 1em;
@@ -21,7 +22,7 @@ p{
 }
 .content{
     background-color: rgb(243, 240, 240); 
-    margin:0 20% 0 20%;
+    margin:0 15% 0 15%;
     border-bottom: hidden;
     border-top: hidden;
     padding-bottom: 0;
@@ -29,6 +30,7 @@ p{
     min-height: 100vh;
 }
 h1{
+    color: rgb(48, 48, 44);
     margin-top: 0;
     font-size: 80px;
    text-align: center;
@@ -45,24 +47,28 @@ img{
 }
 .box1{
     padding:0;
-    padding-left: 3%;
-    height: 40vh;
-    width: 55vh;
+    padding-left:13%;
+    padding-right: 10%;;
+    height: 65%;
+    width: 70%;
     margin:auto;
-    background-color: rgba(248, 228, 210, 0.95);
+    background-color: rgba(247, 231, 217, 0.95);
     display: grid;
-    column-gap: 12vh;
-    grid-template-columns: 20vh 20vh;
+    column-gap: 23%;
+    grid-template-columns: 40% 50%;
     line-height: 5vh;
     row-gap: 4vh;
-    text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    font-size: 2.3vh;   
+    font-size: 100%;   
 }
 .recipe-detail-label{
     font-weight: 700;
+    width: 19vh;
+}
+.recipe-detail-value{
+    width:20vh
 }
 .heading{
+    margin-left: 10%;
     margin-bottom: 2vh;
 }
 .ingredients_list{
@@ -82,10 +88,29 @@ ul{
 ul  li::before{
     content: "\2022";
     position: absolute;
-    left: 1em;
-    font-size: 1.1em;
+    left: 15%;
+    font-size: 1.1ssssssssem;
     color: rgb(241, 135, 35);
 }
-li p{
-   
+li p span{
+    margin-left: 15%;
+}
+ol{
+    display: block;
+    list-style-type: decimal;
+}
+.OL_block_group{
+    counter-reset: section;
+    margin: 1.25rem 0 1.25rem 1rem;
+    line-height: 1.75rem;
+    text-underline-offset: 0.25rem;
+}
+.LI_block_group{
+    position: static;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    display: list-item;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    margin-left: 12%;
 }
